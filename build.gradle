@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+   mavenCentral()
+}
+
+eclipse {
+    classpath {
+       downloadSources=true
+    }
+}
+
+dependencies {
+             compile 'com.pubnub:pubnub:3.7.5'             
+}
